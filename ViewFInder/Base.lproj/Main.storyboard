@@ -13,7 +13,7 @@
         <!--ViewFinder-->
         <scene sceneID="68x-BZ-O6Z">
             <objects>
-                <tableViewController id="13Q-MZ-3gl" sceneMemberID="viewController">
+                <tableViewController id="13Q-MZ-3gl" customClass="PhotoTableViewController" customModule="ViewFInder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BKS-v2-J2i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,6 +59,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
                                 <state key="normal" title="Save This Photo"/>
+                                <connections>
+                                    <action selector="savePhotoTapped:" destination="zbV-gC-ga1" eventType="touchUpInside" id="qby-CG-emt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1H-Yr-I4o">
                                 <rect key="frame" x="31" y="442" width="48" height="32"/>
@@ -78,7 +81,7 @@
                                     <action selector="albumsTapped:" destination="zbV-gC-ga1" eventType="touchUpInside" id="UC3-1c-KgD"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera-clip-camara-6" translatesAutoresizingMaskIntoConstraints="NO" id="KFP-Pw-9l1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="KFP-Pw-9l1">
                                 <rect key="frame" x="71" y="130" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -122,6 +125,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="camera-clip-camara-6" width="772" height="898"/>
+        <image name="image" width="772" height="898"/>
     </resources>
 </document>
