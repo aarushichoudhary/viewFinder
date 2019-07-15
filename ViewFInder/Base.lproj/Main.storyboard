@@ -49,7 +49,7 @@
         <!--Add New Photo-->
         <scene sceneID="R5g-Wg-hox">
             <objects>
-                <viewController id="zbV-gC-ga1" sceneMemberID="viewController">
+                <viewController id="zbV-gC-ga1" customClass="AddPhotoViewController" customModule="ViewFInder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T1v-eu-VHN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,14 +65,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraTapped:" destination="zbV-gC-ga1" eventType="touchUpInside" id="5jg-QI-XkN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uo-vB-rN3">
                                 <rect key="frame" x="276" y="448" width="71" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
                                 <state key="normal" title="Photo Library"/>
+                                <connections>
+                                    <action selector="albumsTapped:" destination="zbV-gC-ga1" eventType="touchUpInside" id="UC3-1c-KgD"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drawn-camera-mini-camera-519393-3008016" translatesAutoresizingMaskIntoConstraints="NO" id="KFP-Pw-9l1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera-clip-camara-6" translatesAutoresizingMaskIntoConstraints="NO" id="KFP-Pw-9l1">
                                 <rect key="frame" x="71" y="130" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -84,14 +90,17 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.74927133321762085" green="0.93703001737594604" blue="0.86453706026077271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.79339534044265747" green="0.9476199746131897" blue="0.94014960527420044" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="DaI-hL-hxd"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="VFN-ZE-ebf"/>
+                    <connections>
+                        <outlet property="imageView" destination="KFP-Pw-9l1" id="iyP-fL-hNb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kdc-aj-0fw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1429.5999999999999" y="46.326836581709152"/>
+            <point key="canvasLocation" x="1561" y="14"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="goH-iT-nn4">
@@ -113,6 +122,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="drawn-camera-mini-camera-519393-3008016" width="375" height="360"/>
+        <image name="camera-clip-camara-6" width="772" height="898"/>
     </resources>
 </document>
