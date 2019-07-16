@@ -17,7 +17,9 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
     @IBOutlet weak var imageView: UIImageView!
     
     
+    
     @IBOutlet weak var captionText: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

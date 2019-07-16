@@ -98,6 +98,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="VFN-ZE-ebf"/>
                     <connections>
+                        <outlet property="captionText" destination="3YE-cP-30r" id="zsV-z9-keH"/>
                         <outlet property="imageView" destination="KFP-Pw-9l1" id="iyP-fL-hNb"/>
                     </connections>
                 </viewController>
